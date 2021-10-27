@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31727.386
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniAppBL", "MiniAppBL\MiniAppBL.csproj", "{9EB6369A-A50B-4A4A-A36A-04A19A6A5025}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniAppUI", "MiniAppUI\MiniAppUI.csproj", "{E1CC4856-D3D8-4BBB-AAA7-0AD0F2D03A3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9EB6369A-A50B-4A4A-A36A-04A19A6A5025}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EB6369A-A50B-4A4A-A36A-04A19A6A5025}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EB6369A-A50B-4A4A-A36A-04A19A6A5025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1CC4856-D3D8-4BBB-AAA7-0AD0F2D03A3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1CC4856-D3D8-4BBB-AAA7-0AD0F2D03A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1CC4856-D3D8-4BBB-AAA7-0AD0F2D03A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1CC4856-D3D8-4BBB-AAA7-0AD0F2D03A3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
