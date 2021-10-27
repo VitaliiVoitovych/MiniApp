@@ -14,5 +14,10 @@ namespace MiniAppBL.Models
 
         public virtual ComponentType ComponentType { get; set; }
         public virtual ICollection<Storage> Storages { get; set; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

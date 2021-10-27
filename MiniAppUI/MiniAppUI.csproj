@@ -56,6 +56,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\ComponentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ComponentForm.Designer.cs">
+      <DependentUpon>ComponentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProviderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProviderForm.Designer.cs">
+      <DependentUpon>ProviderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StorageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StorageForm.Designer.cs">
+      <DependentUpon>StorageForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TypeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +88,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ComponentForm.resx">
+      <DependentUpon>ComponentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProviderForm.resx">
+      <DependentUpon>ProviderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StorageForm.resx">
+      <DependentUpon>StorageForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\TypeForm.resx">
       <DependentUpon>TypeForm.cs</DependentUpon>
     </EmbeddedResource>

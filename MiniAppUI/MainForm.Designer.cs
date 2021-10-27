@@ -40,6 +40,8 @@ namespace MiniAppUI
             this.titleLbl = new System.Windows.Forms.Label();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.addBtn = new System.Windows.Forms.Button();
+            this.editBtn = new System.Windows.Forms.Button();
+            this.deleteBtn = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -156,7 +158,7 @@ namespace MiniAppUI
             this.titleLbl.AutoSize = true;
             this.titleLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.titleLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(215)))), ((int)(((byte)(205)))));
-            this.titleLbl.Location = new System.Drawing.Point(271, 9);
+            this.titleLbl.Location = new System.Drawing.Point(6, 9);
             this.titleLbl.Name = "titleLbl";
             this.titleLbl.Size = new System.Drawing.Size(167, 31);
             this.titleLbl.TabIndex = 0;
@@ -180,13 +182,47 @@ namespace MiniAppUI
             // addBtn
             // 
             this.addBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.addBtn.Location = new System.Drawing.Point(162, 406);
+            this.addBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(215)))), ((int)(((byte)(205)))));
+            this.addBtn.FlatAppearance.BorderSize = 0;
+            this.addBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addBtn.Location = new System.Drawing.Point(582, 403);
             this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(75, 37);
+            this.addBtn.Size = new System.Drawing.Size(86, 37);
             this.addBtn.TabIndex = 3;
             this.addBtn.Text = "Додати";
-            this.addBtn.UseVisualStyleBackColor = true;
+            this.addBtn.UseVisualStyleBackColor = false;
             this.addBtn.Click += new System.EventHandler(this.AddBtn_Click);
+            // 
+            // editBtn
+            // 
+            this.editBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.editBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(215)))), ((int)(((byte)(205)))));
+            this.editBtn.FlatAppearance.BorderSize = 0;
+            this.editBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.editBtn.Location = new System.Drawing.Point(674, 403);
+            this.editBtn.Name = "editBtn";
+            this.editBtn.Size = new System.Drawing.Size(86, 37);
+            this.editBtn.TabIndex = 4;
+            this.editBtn.Text = "Редагувати";
+            this.editBtn.UseVisualStyleBackColor = false;
+            this.editBtn.Click += new System.EventHandler(this.EditBtn_Click);
+            // 
+            // deleteBtn
+            // 
+            this.deleteBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.deleteBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(215)))), ((int)(((byte)(205)))));
+            this.deleteBtn.FlatAppearance.BorderSize = 0;
+            this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.deleteBtn.Location = new System.Drawing.Point(766, 403);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(86, 37);
+            this.deleteBtn.TabIndex = 5;
+            this.deleteBtn.Text = "Видалити";
+            this.deleteBtn.UseVisualStyleBackColor = false;
+            this.deleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // MainForm
             // 
@@ -194,6 +230,8 @@ namespace MiniAppUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(177)))), ((int)(((byte)(138)))));
             this.ClientSize = new System.Drawing.Size(864, 452);
+            this.Controls.Add(this.deleteBtn);
+            this.Controls.Add(this.editBtn);
             this.Controls.Add(this.addBtn);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.panelHeader);
@@ -221,5 +259,7 @@ namespace MiniAppUI
         private System.Windows.Forms.Button providerBtn;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Button addBtn;
+        private System.Windows.Forms.Button editBtn;
+        private System.Windows.Forms.Button deleteBtn;
     }
 }

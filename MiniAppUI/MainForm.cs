@@ -15,48 +15,51 @@ namespace MiniAppUI
     public partial class MainForm : Form
     {
         private MiniAppDbContext db;
-        private bool isLoaded = false;
         public MainForm()
         {
             InitializeComponent();
             db = new MiniAppDbContext();
-            Task.Run(() =>
-            {
-                db.Provider.Load();
-                isLoaded = true;
-            });
         }
 
-        private void LoadTable<T>(DbSet<T> set) where T: class
+        private void LoadTable<T>(DbSet<T> set, object sender) where T: class
         {
-            if (isLoaded)
-            {
-                set.Load();
-                dataGridView.DataSource = set.Local.ToBindingList();
-            }
+            Button button = sender as Button;
+            titleLbl.Text = button.Text;
+            set.Load();
+            dataGridView.DataSource = set.Local.ToBindingList();
         }
 
         private void ProviderBtn_Click(object sender, EventArgs e)
         {
-            LoadTable(db.Provider);
+            LoadTable(db.Provider, sender);
         }
 
         private void ComponentTypeBtn_Click(object sender, EventArgs e)
         {
-            LoadTable(db.ComponentType);
+            LoadTable(db.ComponentType, sender);
         }
 
         private void ComponentType_Click(object sender, EventArgs e)
         {
-            LoadTable(db.Component);
+            LoadTable(db.Component, sender);
         }
 
         private void StorageBtn_Click(object sender, EventArgs e)
         {
-            LoadTable(db.Storage);
+            LoadTable(db.Storage, sender);
         }
 
         private void AddBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
         {
 
         }
