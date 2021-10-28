@@ -24,9 +24,9 @@ namespace MiniAppUI
         private void LoadTable<T>(DbSet<T> set, object sender) where T: class
         {
             Button button = sender as Button;
-            titleLbl.Text = button.Text;
             set.Load();
             dataGridView.DataSource = set.Local.ToBindingList();
+            titleLbl.Text = button.Text;
         }
 
         private void ProviderBtn_Click(object sender, EventArgs e)
@@ -51,7 +51,8 @@ namespace MiniAppUI
 
         private void AddBtn_Click(object sender, EventArgs e)
         {
-
+            var componentForm = new Forms.StorageForm(titleLbl.Text);
+            componentForm.ShowDialog();
         }
 
         private void EditBtn_Click(object sender, EventArgs e)

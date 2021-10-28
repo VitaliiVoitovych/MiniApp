@@ -1,5 +1,4 @@
-﻿using MiniAppBL.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,22 +10,17 @@ using System.Windows.Forms;
 
 namespace MiniAppUI.Forms
 {
-    public partial class TypeForm : Form
+    public partial class TypeForm : EntityBaseForm
     {
-        public ComponentType ComponentType { get; set; }
-        public TypeForm(ComponentType componentType)
+        public TypeForm()
         {
             InitializeComponent();
-
-            ComponentType = componentType ?? new ComponentType();
-            textBox1.Text = ComponentType.Name;
         }
 
-        private void OkButton_Click(object sender, EventArgs e)
+        public TypeForm(string titleText) : base(titleText)
         {
-            ComponentType = ComponentType ?? new ComponentType();
-            ComponentType.Name = textBox1.Text;
-            Close();
+            InitializeComponent();
         }
+
     }
 }

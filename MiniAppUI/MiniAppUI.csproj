@@ -62,6 +62,12 @@
     <Compile Include="Forms\ComponentForm.Designer.cs">
       <DependentUpon>ComponentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EntityBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EntityBaseForm.Designer.cs">
+      <DependentUpon>EntityBaseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ProviderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\ComponentForm.resx">
       <DependentUpon>ComponentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EntityBaseForm.resx">
+      <DependentUpon>EntityBaseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ProviderForm.resx">
       <DependentUpon>ProviderForm.cs</DependentUpon>

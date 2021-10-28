@@ -58,7 +58,7 @@ namespace MiniAppUI
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(156, 452);
+            this.panelMenu.Size = new System.Drawing.Size(156, 456);
             this.panelMenu.TabIndex = 0;
             // 
             // storageBtn
@@ -149,16 +149,15 @@ namespace MiniAppUI
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(156, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(708, 50);
+            this.panelHeader.Size = new System.Drawing.Size(720, 50);
             this.panelHeader.TabIndex = 1;
             // 
             // titleLbl
             // 
-            this.titleLbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.titleLbl.AutoSize = true;
             this.titleLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.titleLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(215)))), ((int)(((byte)(205)))));
-            this.titleLbl.Location = new System.Drawing.Point(6, 9);
+            this.titleLbl.Location = new System.Drawing.Point(7, 9);
             this.titleLbl.Name = "titleLbl";
             this.titleLbl.Size = new System.Drawing.Size(167, 31);
             this.titleLbl.TabIndex = 0;
@@ -176,17 +175,17 @@ namespace MiniAppUI
             this.dataGridView.MultiSelect = false;
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
-            this.dataGridView.Size = new System.Drawing.Size(690, 341);
+            this.dataGridView.Size = new System.Drawing.Size(702, 345);
             this.dataGridView.TabIndex = 2;
             // 
             // addBtn
             // 
-            this.addBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.addBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.addBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(215)))), ((int)(((byte)(205)))));
             this.addBtn.FlatAppearance.BorderSize = 0;
             this.addBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addBtn.Location = new System.Drawing.Point(582, 403);
+            this.addBtn.Location = new System.Drawing.Point(594, 407);
             this.addBtn.Name = "addBtn";
             this.addBtn.Size = new System.Drawing.Size(86, 37);
             this.addBtn.TabIndex = 3;
@@ -196,12 +195,12 @@ namespace MiniAppUI
             // 
             // editBtn
             // 
-            this.editBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.editBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.editBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(215)))), ((int)(((byte)(205)))));
             this.editBtn.FlatAppearance.BorderSize = 0;
             this.editBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.editBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.editBtn.Location = new System.Drawing.Point(674, 403);
+            this.editBtn.Location = new System.Drawing.Point(686, 407);
             this.editBtn.Name = "editBtn";
             this.editBtn.Size = new System.Drawing.Size(86, 37);
             this.editBtn.TabIndex = 4;
@@ -211,12 +210,12 @@ namespace MiniAppUI
             // 
             // deleteBtn
             // 
-            this.deleteBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.deleteBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.deleteBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(215)))), ((int)(((byte)(205)))));
             this.deleteBtn.FlatAppearance.BorderSize = 0;
             this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.deleteBtn.Location = new System.Drawing.Point(766, 403);
+            this.deleteBtn.Location = new System.Drawing.Point(778, 407);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(86, 37);
             this.deleteBtn.TabIndex = 5;
@@ -229,7 +228,7 @@ namespace MiniAppUI
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(177)))), ((int)(((byte)(138)))));
-            this.ClientSize = new System.Drawing.Size(864, 452);
+            this.ClientSize = new System.Drawing.Size(876, 456);
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.editBtn);
             this.Controls.Add(this.addBtn);

@@ -1,5 +1,4 @@
-﻿using MiniAppBL.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,26 +10,16 @@ using System.Windows.Forms;
 
 namespace MiniAppUI.Forms
 {
-    public partial class StorageForm : Form
+    public partial class StorageForm : EntityBaseForm
     {
-        public Storage Storage { get; set; }
-        public StorageForm(Storage storage)
+        public StorageForm()
         {
             InitializeComponent();
-            Storage = storage ?? new Storage();
-            numericUpDown1.Value = Storage.ComponentId;
-            numericUpDown2.Value = Storage.ProviderId;
-            numericUpDown3.Value = Storage.Count;
-
         }
 
-        private void OkButton_Click(object sender, EventArgs e)
+        public StorageForm(string titleText) : base(titleText)
         {
-            Storage = Storage ?? new Storage();
-            Storage.ComponentId = Convert.ToInt32(numericUpDown1.Value);
-            Storage.ProviderId = Convert.ToInt32(numericUpDown2.Value);
-            Storage.Count = Convert.ToInt32(numericUpDown3.Value);
-            Close();
+            InitializeComponent();
         }
     }
 }
