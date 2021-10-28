@@ -54,6 +54,7 @@ namespace MiniAppUI.Forms
             // 
             this.okBtn.FlatAppearance.BorderSize = 0;
             this.okBtn.Location = new System.Drawing.Point(279, 209);
+            this.okBtn.Click += new System.EventHandler(this.OkBtn_Click);
             // 
             // label1
             // 

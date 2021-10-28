@@ -35,5 +35,10 @@ namespace MiniAppUI.Forms
                   Location.Y + deltaPos.Y);
             }
         }
+
+        private void CloseBtn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
