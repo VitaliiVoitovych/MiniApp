@@ -17,10 +17,6 @@ namespace MiniAppUI.Forms
             InitializeComponent();
         }
 
-        public EntityBaseForm(string titleText) : this()
-        {
-            titleLbl.Text = titleText;
-        }
         private Point moveStart;
         private void Header_MouseDown(object sender, MouseEventArgs e)
         {

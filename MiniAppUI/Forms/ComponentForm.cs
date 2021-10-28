@@ -16,10 +16,5 @@ namespace MiniAppUI.Forms
         {
             InitializeComponent();
         }
-
-        public ComponentForm(string titleText) : base(titleText)
-        {
-            InitializeComponent();
-        }
     }
 }

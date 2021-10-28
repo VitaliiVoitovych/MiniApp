@@ -51,7 +51,7 @@ namespace MiniAppUI
 
         private void AddBtn_Click(object sender, EventArgs e)
         {
-            var componentForm = new Forms.StorageForm(titleLbl.Text);
+            var componentForm = new Forms.ComponentForm();
             componentForm.ShowDialog();
         }
 

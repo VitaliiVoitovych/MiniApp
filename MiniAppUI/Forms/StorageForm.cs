@@ -16,10 +16,5 @@ namespace MiniAppUI.Forms
         {
             InitializeComponent();
         }
-
-        public StorageForm(string titleText) : base(titleText)
-        {
-            InitializeComponent();
-        }
     }
 }
