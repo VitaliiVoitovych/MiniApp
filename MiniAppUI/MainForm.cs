@@ -20,6 +20,7 @@ namespace MiniAppUI
         {
             InitializeComponent();
             db = new MiniAppDbContext();
+            db.Provider.Load();
         }
 
         private void LoadTable<T>(DbSet<T> set, object sender) where T: class
